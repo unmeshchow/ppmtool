@@ -8,4 +8,10 @@ import com.unmeshc.ppmtool.domain.Project;
 public interface ProjectService {
 
     Project saveOrUpdateProject(Project project);
+
+    Project getProjectByIdentifier(String projectIdentifier);
+
+    Iterable<Project> getAllProjects();
+
+    void deleteProjectByIdentifier(String projectIdentifier);
 }
